@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+  websocket:
+    build:
+      context: ./docker/
+      dockerfile: Dockerfile_app
+    image: smartbirdfeeder/webapp:latest
+    volumes:
+     - ./webapp/:/usr/src/app
+     - /usr/src/app/node_modules
+    ports:
+     - 2000:2000
