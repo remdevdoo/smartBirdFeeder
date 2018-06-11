@@ -6,9 +6,10 @@
 
 
 
-  // create global variable for storing ajax call data.
+  // Create global variable for storing ajax call data.
   var result = null;
 
+  // Interval get function (10sec).
   setInterval(get, 10000);
 
 
@@ -34,7 +35,7 @@
       triggerChart();
   }
 
-  // function to be called if Ajax request failed.
+  // Function to be called if Ajax request failed.
   function errorHandler() {
 
       alert("Ajax call failed");
