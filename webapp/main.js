@@ -50,4 +50,3 @@ app.get('/volume', function (req, res) {
 //Run server on port 2000
 app.listen(2000);
 console.log("Running at Port 2000");
-console.log(process.env.appID);
